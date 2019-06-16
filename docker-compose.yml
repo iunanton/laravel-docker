@@ -5,6 +5,7 @@ services:
                         context: .
                         dockerfile: .docker/Dockerfile
                 image: laravel-docker
+                network_mode: bridge
                 restart: always
                 ports:
                         - 8080:80
